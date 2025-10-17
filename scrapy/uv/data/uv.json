@@ -5,18 +5,18 @@
     "name": "ARICA (UNIVERSIDAD DE TARAPACÁ)"
   },
   {
-    "indice_num": 9,
+    "indice_num": 10,
     "indice_str": "Muy alto",
     "name": "PUTRE"
   },
   {
-    "indice_num": 9,
+    "indice_num": 10,
     "indice_str": "Muy alto",
     "name": "IQUIQUE"
   },
   {
-    "indice_num": 8,
-    "indice_str": "Muy alto",
+    "indice_num": 4,
+    "indice_str": "Moderado",
     "name": "ISLA DE PASCUA"
   },
   {
@@ -30,8 +30,8 @@
     "name": "VALLENAR AD"
   },
   {
-    "indice_num": 4,
-    "indice_str": "Moderado",
+    "indice_num": 8,
+    "indice_str": "Muy alto",
     "name": "LA SERENA"
   },
   {
@@ -40,18 +40,18 @@
     "name": "SANTIAGO"
   },
   {
-    "indice_num": 5,
-    "indice_str": "Moderado",
+    "indice_num": 9,
+    "indice_str": "Muy alto",
     "name": "LITORAL CENTRAL"
   },
   {
-    "indice_num": 7,
-    "indice_str": "Alto",
+    "indice_num": 8,
+    "indice_str": "Muy alto",
     "name": "GENERAL FREIRE, CURICÓ AD"
   },
   {
-    "indice_num": 9,
-    "indice_str": "Muy alto",
+    "indice_num": 11,
+    "indice_str": "Extremo",
     "name": "RANCAGUA"
   },
   {
@@ -60,8 +60,8 @@
     "name": "TALCA (UNIVERSIDAD AUTONOMA)"
   },
   {
-    "indice_num": 8,
-    "indice_str": "Muy alto",
+    "indice_num": 7,
+    "indice_str": "Alto",
     "name": "GENERAL BERNADOR O'HIGGINS, CHILLÁN AD"
   },
   {
@@ -80,13 +80,13 @@
     "name": "TEMUCO, LA ARAUCANÍA AD."
   },
   {
-    "indice_num": 3,
-    "indice_str": "Moderado",
+    "indice_num": 7,
+    "indice_str": "Alto",
     "name": "VALDIVIA"
   },
   {
-    "indice_num": 2,
-    "indice_str": "Bajo",
+    "indice_num": 4,
+    "indice_str": "Moderado",
     "name": "PUERTO MONTT"
   },
   {
@@ -95,7 +95,7 @@
     "name": "PUNTA ARENAS (AEROPUERTO)"
   },
   {
-    "indice_num": 4,
+    "indice_num": 3,
     "indice_str": "Moderado",
     "name": "ANTÁRTICA"
   }
