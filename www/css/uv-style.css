@@ -8,8 +8,7 @@ html,body{
         justify-self:center;
         width:100%;
         max-width:660px;
-        gap:5px;
-        padding:10px 10px 10px 10px;
+        gap:5px;        
       }
 
       .container-uv{        
