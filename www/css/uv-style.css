@@ -2,18 +2,24 @@ html,body{
   background:#E0E0E0;
   font-family:"JetBrains Mono";
 }
+.container-main-fixed-next{
+  padding-top:85px;
+}
+.container-main-fixed{
+  position:fixed;
+}
 .container-main{
   display:flex;
   flex-direction:column;
   justify-self:center;
   width:100%;
-  max-width:660px;
-  gap:3px;        
+  max-width:660px;  
 }
 .container-uv-scale{
+  background:#E0E0E0;
   display:flex;
   flex-direction:row;  
-  height:35px;
+  height:16px;
   justify-content:flex-start;
   align-items:stretch;  
 }
@@ -33,7 +39,8 @@ html,body{
   grid-template-rows:repeat(2,1fr);
   height:70px;          
   background-color:#F5F5F5;
-  align-self:stretch;        
+  align-self:stretch;
+  border-bottom:3px solid #E0E0E0;        
 }
 
 .city-name{        
