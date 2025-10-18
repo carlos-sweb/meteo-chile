@@ -34,25 +34,21 @@
       }
       .city-name{        
         grid-column: 1 / 7;
-        grid-row: 1 / 3;
-        font-size:28px;
+        grid-row: 1 / 3;        
         font-weight:600;
-        text-align:left;        
-                      
+        text-align:left;                            
         display: flex;
         justify-content: center;
         flex-direction:column;
-        align-items: start;
-
-        /* 
-          justify-content:center; 
-          justify-items:left;
-        */        
-        color:#0277BD;        
+        align-items: start;        
+               
       } 
-      .city-name>span{                
-        padding:0px 5px 0px 5px;
-      }   
+      .city-name>span{
+        color:#263238;
+        padding:0px 5px 0px 10px;
+        font-size:23px;
+      }
+      
       
       .city-uv{
         grid-column: 7 / 9;
@@ -86,12 +82,13 @@
 </head>
 <body>
 
-    <div id="main" class="container-main">
-      <!--   <div class="container-uv">
-          <div class="city-name"><span>Arica</span></div>
-          <div class="city-uv"><span>10</span></div>
-        </div>-->
-     
+    
+
+    <div id="main" class="container-main">      
+        <div class="container-uv" >
+          <div class="city-name"><span>REGIÓN</span></div>
+          <div class="city-uv"><span>UV</span></div>
+      </div>
     </div>
 
 <script type="text/javascript">
