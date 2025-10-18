@@ -37,18 +37,26 @@
         grid-row: 1 / 3;
         font-size:28px;
         font-weight:600;
-        text-align:left;
-        text-indent:25px;
-        display:flex;
+        text-align:left;        
+                      
+        display: flex;
+        justify-content: center;
         flex-direction:column;
-        justify-content:center;
-        color:#0277BD;
+        align-items: start;
+
+        /* 
+          justify-content:center; 
+          justify-items:left;
+        */        
+        color:#0277BD;        
       } 
+      .city-name>span{                
+        padding:0px 5px 0px 5px;
+      }   
       
       .city-uv{
         grid-column: 7 / 9;
         grid-row: 1 / 3;
-        /*background: #212121;*/
         color:#37474F;
         text-align:center;
         font-weight:900;
@@ -95,32 +103,34 @@
             const containerUv = document.createElement("div");
             const name = document.createElement("div");
             name.classList.add("city-name");
+            const nameSpan = document.createElement("span");
+            name.appendChild(nameSpan);
 
             switch(item.name){
               case "ARICA (UNIVERSIDAD DE TARAPACÁ)":
-                name.innerText = "ARICA"
+                nameSpan.innerText = "ARICA"
               break;
               case "TALCA (UNIVERSIDAD AUTONOMA)":
-                name.innerText = "TALCA"
+                nameSpan.innerText = "TALCA"
               break;
               case "GENERAL FREIRE, CURICÓ AD":
-                name.innerText = "CURICÓ"
+                nameSpan.innerText = "CURICÓ"
               break;
               case "GENERAL BERNADOR O'HIGGINS, CHILLÁN AD":
-                name.innerText = "CHILLÁN"
+                nameSpan.innerText = "CHILLÁN"
               break;
               case "MARÍA DOLORES, LOS ÁNGELES    AD.":
-                name.innerText = "LOS ÁNGELES"
+                nameSpan.innerText = "LOS ÁNGELES"
               break;
               case "TEMUCO, LA ARAUCANÍA AD.":
-                name.innerText = "TEMUCO"
+                nameSpan.innerText = "TEMUCO"
               break;
               case "PUNTA ARENAS (AEROPUERTO)":
-                name.innerText = "PUNTA ARENAS"
+                nameSpan.innerText = "PUNTA ARENAS"
               break;                            
               default:
-                console.log(item.name)
-                name.innerText = item.name
+                
+                nameSpan.innerText = item.name
               break;
             }
 
@@ -128,6 +138,7 @@
             const uv = document.createElement("div");
             
             const i = item.indice_num;
+
             const classNameUv = 
               i == 1 || i ==  2 ? "city-uv-bajo" :
               i >= 3 && i <= 5  ? "city-uv-moderado" : 
@@ -135,6 +146,7 @@
               i >= 8 && i <= 10 ? "city-uv-muy-alto" : 
               i >= 11 ? "city-uv-extremo" : 
               "city-uv-nofound"
+
             uv.classList.add("city-uv");  
             uv.classList.add(classNameUv);  
             uv.innerText = i;
@@ -142,9 +154,9 @@
             containerUv.appendChild(name);
             containerUv.appendChild(uv);
             
-
             containerUv.classList.add("container-uv");
             main.appendChild(containerUv);
+
           }   
     });
 

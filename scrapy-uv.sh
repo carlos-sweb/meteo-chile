@@ -21,4 +21,4 @@ qjs -e \
 );\
 print(JSON.stringify(RadiacionUVB,null,2));" | \
 jq '[.[] | select(.enservicio == true) | { indice_num:(.indiceobs | split(":")[0] | tonumber ),indice_str:(.indiceobs | split(":")[1] ),name:.nombre}]' \
-> data/uv.json
+> www/data/uv.json
