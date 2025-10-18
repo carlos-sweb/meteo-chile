@@ -13,10 +13,9 @@ html,body{
 .container-uv-scale{
   display:flex;
   flex-direction:row;  
-  height:50px;
+  height:35px;
   justify-content:flex-start;
-  align-items:stretch;
-  margin-bottom:15px;
+  align-items:stretch;  
 }
 .uv-scale{  
   align-self:stretch; 
@@ -32,7 +31,7 @@ html,body{
   display:grid;        
   grid-template-columns:repeat(8,1fr);
   grid-template-rows:repeat(2,1fr);
-  height:70px;        
+  height:70px;          
   background-color:#F5F5F5;
   align-self:stretch;        
 }
@@ -59,24 +58,38 @@ html,body{
   text-align:center;
   font-weight:900;
   font-size:35px;
+  display:flex;  
+  justify-content:center;  
+  align-items:center;
+}
+
+.city-uv>span{  
   display:flex;
-  flex-direction:column;
   justify-content:center;
+  flex-direction:column;
+  width:60px;
+  height:60px;
+  text-align:center;
+  border-radius:100%;
 }
-.city-uv-bajo{
-  background-color:#90EE02;
+.city-uv-bajo>span{
+  color:#212121;    
+  background-color:#90EE02;  
 }
-.city-uv-moderado{
-  background-color:#FFEB3B;
+.city-uv-moderado>span{
+  color:#212121;    
+  background-color:#FFEB3B;  
 }
-.city-uv-alto{
-  background-color:#FF9800;
+.city-uv-alto>span{
+  color:#212121; 
+  background-color:#FF9800;  
 }
-.city-uv-muy-alto{
-  background-color:#F44336;
-  color:#E0E0E0;
+.city-uv-muy-alto>span{
+  color:#E0E0E0;    
+  background-color:#F44336;  
 }
-.city-uv-extremo{
-  background-color:#9C27B0;
-  color:#E0E0E0;
+.city-uv-extremo>span{
+  color:#E0E0E0;    
+  background-color:#9C27B0;  
 }
+

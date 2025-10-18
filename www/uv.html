@@ -15,7 +15,7 @@
         <div class="container-uv" >
           <div class="city-name"><span>REGIÓN</span></div>
           <div class="city-uv"><span>UV</span></div>
-        </div>
+        </div>        
         <div class="container-uv-scale" >
           <div class="uv-scale city-uv-bajo"><span>BAJO</span></div>
           <div class="uv-scale city-uv-moderado"><span>MODERADO</span></div>
@@ -33,7 +33,9 @@
           for( let item of data){
             const containerUv = _c_e("div"),
             name = _c_e("div"),
-            nameSpan = _c_e("span");
+            nameSpan = _c_e("span"),
+            uv = _c_e("div"),
+            uvSpan = _c_e("span");
 
             name.classList.add("city-name");            
             name.appendChild(nameSpan);
@@ -67,7 +69,7 @@
             }
 
             
-            const uv = document.createElement("div");
+            
             
             const i = item.indice_num;
 
@@ -79,16 +81,14 @@
               i >= 11 ? "city-uv-extremo" : 
               "city-uv-nofound"
 
-            uv.classList.add("city-uv");  
-            uv.classList.add(classNameUv);  
-            uv.innerText = i;
+            uv.classList.add("city-uv",classNameUv)            
+            uv.appendChild(uvSpan).innerText = i
+            
                         
             containerUv.appendChild(name);
-            containerUv.appendChild(uv);
-            
-            containerUv.classList.add("container-uv");
+            containerUv.appendChild(uv);            
+            containerUv.classList.add("container-uv");                      
             main.appendChild(containerUv);
-
           }   
     });
 
