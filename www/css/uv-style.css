@@ -1,0 +1,67 @@
+html,body{
+      background:#E0E0E0;
+      font-family:"JetBrains Mono";
+    }
+      .container-main{
+        display:flex;
+        flex-direction:column;
+        justify-self:center;
+        width:100%;
+        max-width:660px;
+        gap:5px;
+        padding:10px 10px 10px 10px;
+      }
+
+      .container-uv{        
+        display:grid;        
+        grid-template-columns:repeat(8,1fr);
+        grid-template-rows:repeat(2,1fr);
+        height:70px;              
+        background-color:#F5F5F5;
+        align-self:stretch;        
+      }
+      .city-name{        
+        grid-column:1/7;
+        grid-row:1/3;        
+        font-weight:600;
+        text-align:left;                            
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        align-items:start;
+      } 
+      .city-name>span{
+        color:#263238;
+        padding:0px 5px 0px 10px;
+        font-size:23px;
+      }
+      
+      
+      .city-uv{
+        grid-column: 7 / 9;
+        grid-row: 1 / 3;
+        color:#37474F;
+        text-align:center;
+        font-weight:900;
+        font-size:35px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+      }
+      .city-uv-bajo{
+        background-color:#90EE02;
+      }
+      .city-uv-moderado{
+        background-color:#FFEB3B;
+      }
+        .city-uv-alto{
+        background-color:#FF9800;
+      }
+      .city-uv-muy-alto{
+        background-color:#F44336;
+        color:#E0E0E0;
+      }
+      .city-uv-extremo{
+        background-color:#9C27B0;
+        color:#E0E0E0;
+      }
